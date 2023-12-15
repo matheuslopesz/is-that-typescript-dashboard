@@ -1,13 +1,16 @@
 import './App.css'
 import Header from './components/Header'
 import Sidenav from './components/SideNav'
-import OverView from './page/OverView'
+import OverView from './pages/OverView'
 
 function App() {
   return (
     <>
-      <Header />
       <Sidenav />
+      <main>
+        <Header />
+        <OverView />
+      </main>
     </>
   )
 }

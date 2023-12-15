@@ -3,7 +3,7 @@ import React from 'react';
 const OverView: React.FC = () => {
   return (
     <div>
-      {/* Your component content goes here */}
+      <h1>dashboard</h1>
     </div>
   );
 };
