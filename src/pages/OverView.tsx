@@ -1,5 +1,4 @@
 import React from 'react';
-import DateRange from '../components/DateRange';
 
 const OverView: React.FC = () => {
   return (
