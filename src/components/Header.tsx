@@ -1,12 +1,13 @@
-import React from 'react';
-import { useData } from '../contexts/DataContext';
+import DateRange from "./DateRange";
+import LastMonths from "./LastMonths";
 
-const Header: React.FC = () => {
-  const { data } = useData();
-  console.log(data);
+const Header = () => {
   return (
-    <header>
-      <h1>My App</h1>
+    <header className="mb">
+      <div className="mb">
+        <DateRange />
+      </div>
+      <LastMonths />
     </header>
   );
 };
