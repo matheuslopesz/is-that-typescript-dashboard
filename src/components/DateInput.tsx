@@ -1,8 +1,8 @@
-type DateInputProps = {
+type DateInputProps = React.ComponentProps<'input'> & {
   label: string;
 };
 
-const DateInput = ({label}: DateInputProps) => {
+const DateInput = ({label, ...props}: DateInputProps) => {
   return (
     <div>
       <label>{label}</label>
