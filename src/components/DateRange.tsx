@@ -1,24 +1,23 @@
-import React from 'react';
 import DateInput from './DateInput';
+import { useData } from '../contexts/DataContext';
 
 const DateRange = () => {
-  const [startDate, setStartDate] = React.useState('');
-  const [endDate, setEndDate] = React.useState('');
+  const { start, setStart, end, setEnd } = useData();
 
   return (
     <form onSubmit={(e) => e.preventDefault()} className='box flex'>
       <DateInput 
         label='Start date'
-        value={startDate}
-        onChange={({ target }) => setStartDate(target.value)}
+        value={start}
+        onChange={({ target }) => setStart(target.value)}
       />
-      <p>{startDate}</p>
+      <p>{start}</p>
       <DateInput 
         label='End date'
-        value={endDate}
-        onChange={({ target }) => setEndDate(target.value)}
+        value={end}
+        onChange={({ target }) => setEnd(target.value)}
       />
-      <p>{endDate}</p>
+      <p>{end}</p>
     </form>
   );
 };

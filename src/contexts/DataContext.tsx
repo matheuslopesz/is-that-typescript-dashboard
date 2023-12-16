@@ -44,7 +44,7 @@ export const DataContextProvider = ({ children }: React.PropsWithChildren) => {
   const [end, setEnd] = React.useState(getDate(0));
 
   const { data, loading, error } = useFetch<IVenda[]>(
-    "https://data.origamid.dev/vendas/",
+    `https://data.origamid.dev/vendas/?inicio=${start}&final=${end}`,
   );
 
   return (
