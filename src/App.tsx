@@ -8,11 +8,13 @@ function App() {
   return (
     <>
       <DataContextProvider>
-        <Sidenav />
-        <main>
-          <Header />
-          <OverView />
-        </main>
+        <div className='container'>
+          <Sidenav />
+          <main>
+            <Header />
+            <OverView />
+          </main>
+        </div>
       </DataContextProvider>
     </>
   )
