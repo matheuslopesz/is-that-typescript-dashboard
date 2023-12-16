@@ -1,5 +1,4 @@
 import React from 'react';
-
 import DateInput from './DateInput';
 
 const DateRange = () => {
@@ -13,15 +12,15 @@ const DateRange = () => {
         value={startDate}
         onChange={({ target }) => setStartDate(target.value)}
       />
-      {startDate}
+      <p>{startDate}</p>
       <DateInput 
         label='End date'
-        onChange={({ target }) => setEndDate(target.value)}
         value={endDate}
+        onChange={({ target }) => setEndDate(target.value)}
       />
-      {endDate}
+      <p>{endDate}</p>
     </div>
   );
 };
 
-export default DateRange;
+export default DateRange; 
