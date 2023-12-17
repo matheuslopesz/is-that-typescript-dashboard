@@ -2,15 +2,16 @@ import React from "react";
 
 import useFetch from "../hooks/useFetcher";
 
-export type IVenda = {
+type IVenda = {
   id: string;
-  name: string;
-  price: number;
+  nome: string;
+  preco: number;
   status: "pago" | "processando" | "falha";
-  paymentMethod: "boleto" | "pix" | "card";
-  date: string;
-  installments: number | null;
+  pagamento: "boleto" | "pix" | "cartao";
+  data: string;
+  parcelas: number | null;
 };
+
 
 type IDataContext = {
   data: IVenda[] | null;
