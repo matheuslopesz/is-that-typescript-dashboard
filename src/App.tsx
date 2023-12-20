@@ -1,11 +1,13 @@
-import './App.css'
 import Header from './components/Header'
 import Sidenav from './components/SideNav'
 import OverView from './pages/OverView'
-import { DataContextProvider } from './contexts/DataContext'
+import  Sale  from './pages/Sale'
 import Sales from './pages/Sales'
+
+import { DataContextProvider } from './contexts/DataContext'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Sale } from './pages/Sale'
+
+import './App.css'
 
 function App() {
   return (
@@ -18,7 +20,8 @@ function App() {
               <Header />
               <Routes>
                 <Route path='/'  element={ <OverView/> } />
-                <Route path='/'  element={ <Sales/> } />
+                <Route path='/sales'  element={ <Sales/> } />
+                <Route path='/sale/:id'  element={ <Sale/> } />
               </Routes>
             </main>
           </div>
