@@ -1,6 +1,7 @@
-import { IVenda } from "../contexts/DataContext";
+import { ISale } from "../contexts/DataContext";
 
-const SaleItem = ({ sale }: { sale: IVenda }) => {
+
+const SaleItem = ({ sale }: { sale: ISale }) => {
   return (
     <div className="venda box">
       <a href="" style={{ fontFamily: "monospace" }}>

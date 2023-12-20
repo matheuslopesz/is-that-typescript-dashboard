@@ -9,7 +9,7 @@ const Sales = () => {
     <ul>
       {data.map((sale) => (
         <li key={sale.id}>
-          <SaleItem venda={sale} />
+          <SaleItem sale={sale} />
         </li>
       ))}
     </ul>
