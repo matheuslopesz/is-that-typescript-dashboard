@@ -1,6 +1,6 @@
 import React from "react";
 
-import useFetch from "../hooks/useFetcher";
+import useFetch from "../hooks/useFetch";
 
 export type ISale = {
   id: string;

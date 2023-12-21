@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const SaleItem = ({ sale }: { sale: ISale }) => {
   return (
     <div className="venda box">
-       <NavLink to={`/vendas/${sale.id}`} style={{ fontFamily: "monospace" }}>
+       <NavLink to={`/venda/${sale.id}`} style={{ fontFamily: "monospace" }}>
         {sale.id}
       </NavLink>
       <div>{sale.nome}</div>

@@ -13,7 +13,7 @@ const Header = () => {
     if (location.pathname === "/") {
       setTitle("OverView");
       document.title = "Fintech | OverView";
-    } else if (location.pathname === "/sales") {
+    } else if (location.pathname === "/vendas") {
       setTitle("Sales");
       document.title = "Fintech | Sales";
     }
